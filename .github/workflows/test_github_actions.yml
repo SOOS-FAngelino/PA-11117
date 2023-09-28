@@ -16,7 +16,7 @@ jobs:
         with:
           project_name: ${{ github.repository }}
           sarif: "true"
-          api_url: "https://dev-api.soos.io/api/"
+          api_url: "https://qa-api.soos.io/api/"
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
       - name: Upload SOOS SCA Report
